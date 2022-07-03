@@ -1,0 +1,613 @@
+@import url(reset.css);
+/* 缺padding */
+.index {
+    width: 100%;
+}
+.content {
+    width: 1200px;
+    margin: auto;
+}
+/* main {
+    width: 1200px;
+} */
+h2 {
+    font-size: 30px;
+    font-weight: bold; 
+}
+aside {
+    font-size: 15px;
+}
+a {
+    text-decoration: none;
+}
+.center_line {
+    margin: auto;
+    width: 50px;
+    border-bottom: 2px solid #F24141;
+}
+.left_line {
+    width: 50px;
+    border-bottom: 3px solid #F24141;
+    margin-bottom: 30px;
+}
+
+/* nav bar */
+
+nav {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 10px;
+    font-size: 20px;
+    background-color: whitesmoke;
+    margin-bottom: 30px;
+    box-shadow: 0px 5px 5px 1px #EFEFEF;
+}
+nav .logo {
+    display: flex;
+    font-weight: bold;
+}
+nav a {
+    color: black;
+    margin: 0px 10px 0px;
+    line-height: 1.5;
+}
+/* heading */
+header {
+    width: 100%;
+    text-align: center;
+}
+header .banner :first-child {
+    width: 100%;
+}
+header h1 {
+    font-size: 34px;
+    font-weight: bold;
+    color: #3A404E;
+    padding: 30px 0px 10px 0px;
+}
+header h2 {
+    font-size: 22px;
+    color: #3A404E;
+    padding: 40px 0px 50px;
+}
+header div:nth-of-type(2) {
+    display: flex;
+    justify-content: space-around;
+}
+header figure {
+    width: 360px;
+}
+header figure :first-child {
+    width: 65%;
+}
+header figure :nth-child(2) {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+header figure :nth-child(3) {
+    font-size: 16px;
+    line-height: 1.5;
+}
+/* teacher */
+.teacher {
+    width: 100%;
+    background-color: #EFEFEF;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.teacher .teacher_intro {
+    padding: 300px 150px 0px 150px;
+    background-image: url(teacher_background.png);
+    background-repeat: no-repeat;
+}
+.teacher h2 {
+    margin-bottom: 10px;
+}
+.teacher .teacher_intro :nth-child(3) {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+.teacher section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+section .teacher_list {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* 改alignitem? */
+    /* align-items: center; */
+    background-color: white;
+    align-content: flex-start;
+    /* 把彈性空間擠掉 */
+    margin-bottom: 20px;
+    padding: 50px 35px;
+}
+/* amos */
+/* img是否可以直接用？ */
+section .teacher_list .teacher_pic {
+    width: 30%;
+}
+section .teacher_list .teacher_pic img {
+    width: 100%;
+    border-radius: 100%;
+}
+section .teacher_list .teacher_info {
+    width: 55%;
+    padding: 30px 30px;
+}
+section .teacher_info {
+    width: 100%;
+}
+section .teacher_info div:first-child {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+section .teacher_info div:nth-of-type(3) {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+section .teacher_info div:nth-of-type(4) {
+    display: flex;
+    /* width: 60%; */
+    align-items: center;
+}
+section .teacher_info div:nth-of-type(4) img {
+    width: 25px;
+    margin-right: 10px;
+}
+section .teacher_about {
+    /* width: 90%; */
+    border-top: 1px solid #E5E7EB;
+    padding: 20px 0px;
+    /* margin: 0px 10px; */
+    line-height: 1.8;
+    font-size: 18px;
+}
+section .teacher_about p {
+    font-size: 15px;
+    color: #3A3F4F;
+    padding: 5px 0px;
+}
+section .teacher_about span {
+    font-weight: bold;
+}
+section .teacher_about a {
+    color: #F24141;
+}
+section .teacher_more {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+section .teacher_more div:first-of-type {
+    font-size: 15px;
+    color: #3A3F4F;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+section .teacher_more div:nth-of-type(2) {
+    width: 380px;
+    height: 1px;
+    background-color: #E5E7EB;
+    margin-bottom: 20px;
+}
+section .teacher_more a {
+    font-size: 13px;
+    color: #F24141;
+    border: 1px solid #F24141;
+    border-radius: 5px;
+    padding: 8px;
+    margin-right: 8px;
+}
+/* media */
+.media {
+    width: 1200px;
+    background-color: #EFEFEF;
+    padding-bottom: 30px;
+    margin: auto;
+}
+.media h2 {
+    text-align: center;
+}
+.media .media_line {
+    width: 50px;
+    border-bottom: 3px solid #F24141;
+    margin: 5px auto 70px;
+    padding-top: 10px;
+} 
+.media section {
+    display: flex;
+    justify-content: space-evenly;
+}
+.media section ul {
+    width: 40%;
+}
+.media section ul li, .media ul aside {
+    margin-bottom: 40px;
+}
+.media section ul a {
+    display: block;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #3A404E;
+    margin-bottom: 20px;
+}
+.media .media_more {
+    background-color: #F24141;
+    border-radius: 5px;
+    text-align: center;
+    width: 150px;
+    margin: auto;
+}
+.media .media_more a {
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    padding: 20px 5px;
+}
+/* pro_lession */
+.pro_lesson {
+    background-image: url(lesson_background.png),
+    url(other_lesson_background.png),linear-gradient(to right, rgba(41, 46, 59, 1),  rgba(41, 46, 59, 1));
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top, bottom right, left;
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    /* height: 700px; */
+    /* align-items: center; */
+}
+.pro_lesson .short_lesson {
+    width: 50%;
+    padding: 200px 0px 0px 90px;
+    margin-bottom: 300px;
+}
+.pro_lesson .short_lesson h2 {
+    color: white;
+    padding-top: 100px;
+    margin-bottom: 10px;
+}
+.pro_lesson .short_lesson div:nth-child(3) {
+    font-size: 18px;
+    color: #EFEFEF;
+    line-height: 1.5;
+    padding-right: 30px;
+    /* 調整右邊距離 */
+}
+.pro_lesson .other_lesson {
+    width: 50%;
+    padding-top: 520px;
+}
+
+.pro_lesson .other_lesson h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    /* padding-top: 200px; */
+}
+
+.pro_lesson .other_lesson div:first-of-type {
+    font-size: 15px;
+    color: white;
+    margin-bottom: 30px;
+}
+.pro_lesson .other_lesson div:nth-of-type(2) a{
+    color: white;
+}
+/* recent_lession */
+.recent_lesson {
+    width: 1200px;
+    background-color: #292E3B;
+    margin: auto;
+}
+.recent_lesson h2 {
+    color: white;
+    padding-left: 30px;
+    margin-bottom: 30px;
+}
+.recent_lesson .recent_lesson_area {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.recent_lesson_area .lesson_link {
+    width: 360px;
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+.recent_lesson_area .lesson_link img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    margin-bottom: 15px;
+}
+.recent_lesson_area .lesson_link .lesson_date {
+    display: inline-block;
+    width: 90px;
+    border: 1px solid #D3D6DA;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #6C717C;
+    padding: 5px;
+    margin: 0px 0px 15px 15px;
+}
+.recent_lesson_area .lesson_link .lesson_teacher {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 15px;
+    color: #9FA4AE;
+    border-top: 1px solid grey;
+    padding-top: 10px;
+    margin: 0px 15px 10px;
+}
+.recent_lesson_area .lesson_link .lesson_teacher div{
+    display: flex;
+    margin: 0px 0px 10px;
+}
+.recent_lesson_area .lesson_teacher img {
+    width: 15px;
+}
+.recent_lesson .recent_lesson_more {
+    background-image: url(lesson_more_background.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-bottom: 180px;
+}
+.recent_lesson .recent_lesson_more a {
+    display: inline-block;
+    background-color: #F24141;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+/* learning path */
+/* 背景還沒用好 */
+.learning_path {
+    background-image: url(learning_lesson_background.png), linear-gradient(to bottom, #EFEFEF,  #EFEFEF);
+    background-repeat: no-repeat, no-repeat; 
+    background-position: bottom;
+    width: 1200px;
+    margin: auto;
+    padding-bottom: 100px;
+    /* background-image: url(learning_lesson_background.png),linear-gradient(to right, #EFEFEF,  #EFEFEF), ;
+    background-position: bottom center;
+    background-repeat: no-repeat, no-repeat; */
+}
+.learning_path .learning_path_title {
+    padding: 10px 350px 50px 100px;
+}
+.learning_path h2 {
+    margin-bottom: 10px;
+}
+.learning_path .learning_path_title :nth-child(3) {
+    font-size: 22px;  
+    line-height: 1.5;
+}
+.learning_lesson {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 60px 0px 60px;
+}
+.learning_lesson a {
+    background-color: white;
+    width: 45%;
+    border-radius: 20px;
+}
+.learning_lesson h3 {
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    color: white;
+    padding: 70px 0px;
+    margin-bottom: 20px;
+    border-radius: 10px 10px 0px 0px;
+}
+.learning_lesson .coding_title {
+    background-image: url(coding_lesson.png);
+    background-position: center;
+    background-color: rgba(41, 46, 59, 0.5);
+}
+.learning_lesson .astro_title {
+    background-image: url(astrocamp.png);
+    background-position: center;
+}
+.learning_lesson div:nth-child(2) {
+    font-size: 22px;
+    margin: 0px 0px 20px 20px;
+    color: #3A404E;
+    font-weight: bold;
+}
+.learning_lesson div:nth-child(3) {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #3A404E;
+    border-top: 1px solid grey;
+    margin: 0px 20px 10px 20px;
+    padding-top: 20px;
+}
+.learning_lesson div:nth-child(4) {
+    color: #F24141;
+    padding: 10px 0px 0px 20px;
+    margin-bottom: 20px;
+}
+.learning_bgc {
+    width: 100%;
+    height: 300px;
+    background-image: url(learning_lesson_background.png)
+}
+
+/* recommend */
+.recommend {
+    width: 1200px;
+    background-color: white;
+    margin: auto;
+}
+.recommend h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.recommend section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+.recommend blockquote {
+    width: 180px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid #EFEFEF;
+    box-shadow: 0px 5px 5px 1px #EFEFEF;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #39414D;
+    line-height: 1.5;
+}
+.recommend cite {
+    color: #A0A5AD;
+    padding: 15px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+}
+/* 圖片要再條 */
+.recommend cite img {
+    width: 35px;
+    border-radius: 20px;
+    padding-right: 10px;
+}
+.recommend section img:nth-last-child(0) {
+    width: 100%;
+}
+/* article_list */
+.article_list {
+    background-color: white;
+    width: 1200px;
+    margin: auto;
+}
+.article_list h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.article_list section {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+.article_list section .article_link {
+    width: 350px;
+    margin-bottom: 50px;
+}
+.article_list section .article_link img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.article_link article {
+    font-size: 22px;
+    line-height: 1.5;
+    color: black;
+    font-weight: bold;
+    margin: 0px 0px 20px 0px;
+}
+.article_list aside {
+    color: #A0A4AE;
+}
+.article_list :nth-child(4) {
+    width: 120px;
+    background-color: #F24141;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+    margin: auto;
+}
+.article_list :nth-child(4) a {
+    font-size: 20px;
+    color: white;
+}
+
+/* footer */
+footer {
+    width: 1120px;
+    background-image: url(more_link_background.png), linear-gradient(to right, rgba(41, 46, 59, 1),  rgba(41, 46, 59, 1));
+    background-repeat: no-repeat, no-repeat;
+    background-position: top, bottom right;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 270px 0px 0px 80px;
+    margin: auto;
+}
+footer .fivexruby {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+}
+footer .fivexruby img {
+    width: 200px;
+    margin-bottom: 40px;
+}
+footer .fivexruby a {
+    font-size: 15px;
+    color: white;
+    line-height: 2;
+}
+footer .fivexruby_about {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+footer .fivexruby_about .fivexruby_link {
+    width: 200px;
+    margin: 0px 20px 50px 0px;
+}
+footer .fivexruby_link :first-child {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer .fivexruby_link a {
+    display: block;
+    font-size: 12px;
+    color: white;
+    line-height: 2;
+}
+footer .link_icon {
+    margin: 40px auto;
+}
+footer .link_icon a {
+    padding-right: 40px;
+}
+footer .link_icon img {
+    width: 30px;
+}
+.footer_txt {
+    width: 1200px;
+    background-color: #151D2D;
+    text-align: center;
+    color: grey;
+    font-size: 10px;
+    padding: 15px 0px;
+    margin: auto;
+}
+
+
