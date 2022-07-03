@@ -27,7 +27,6 @@ a {
     border-bottom: 3px solid #F24141;
     margin-bottom: 30px;
 }
-
 /* nav bar */
 nav {
     height: 30px;
@@ -152,7 +151,6 @@ section .teacher_info div:nth-of-type(3) {
 }
 section .teacher_info div:nth-of-type(4) {
     display: flex;
-    /* width: 60%; */
     align-items: center;
 }
 section .teacher_info div:nth-of-type(4) img {
@@ -160,10 +158,8 @@ section .teacher_info div:nth-of-type(4) img {
     margin-right: 10px;
 }
 section .teacher_about {
-    /* width: 90%; */
     border-top: 1px solid #E5E7EB;
     padding: 20px 0px;
-    /* margin: 0px 10px; */
     line-height: 1.8;
     font-size: 18px;
 }
@@ -260,8 +256,6 @@ section .teacher_more a {
     width: 1200px;
     display: flex;
     margin: auto;
-    /* height: 700px; */
-    /* align-items: center; */
 }
 .pro_lesson .short_lesson {
     width: 50%;
@@ -278,21 +272,17 @@ section .teacher_more a {
     color: #EFEFEF;
     line-height: 1.5;
     padding-right: 30px;
-    /* 調整右邊距離 */
 }
 .pro_lesson .other_lesson {
     width: 50%;
     padding-top: 520px;
 }
-
 .pro_lesson .other_lesson h3 {
     font-size: 22px;
     font-weight: bold;
     color: white;
     margin-bottom: 20px;
-    /* padding-top: 200px; */
 }
-
 .pro_lesson .other_lesson div:first-of-type {
     font-size: 15px;
     color: white;
@@ -441,12 +431,6 @@ section .teacher_more a {
     padding: 10px 0px 0px 20px;
     margin-bottom: 20px;
 }
-/* .learning_bgc {
-    width: 100%;
-    height: 300px;
-    background-image: url(learning_lesson_background.png)
-} */
-
 /* recommend */
 .recommend {
     width: 1200px;
@@ -537,7 +521,6 @@ section .teacher_more a {
     font-size: 20px;
     color: white;
 }
-
 /* footer */
 footer {
     width: 1120px;
@@ -579,7 +562,6 @@ footer .fivexruby_link :first-child {
     font-weight: bold;
     margin-bottom: 10px;
 }
-
 footer .fivexruby_link a {
     display: block;
     font-size: 12px;
